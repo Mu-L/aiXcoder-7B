@@ -1,31 +1,37 @@
 # aiXcoder-7B Code Large Language Model
 
 <p align="center">
-    🏠 <a href="https://www.aixcoder.com/" target="_blank">Official website</a>｜🛠 <a href="https://marketplace.visualstudio.com/items?itemName=aixcoder-plugin.aixcoder" target="_blank">VS Code Plugin</a>｜🛠 <a href="https://plugins.jetbrains.com/plugin/13574-aixcoder-code-completer" target="_blank">Jetbrains Plugin</a>｜🤗 <a href="https://huggingface.co/aiXcoder/aixcoder-7b-base" target="_blank">Model Weights</a>｜<a href="./assets/wechat_1.jpg" target="_blank">WeChat</a>｜<a href="./assets/wechat_2.jpg" target="_blank">WeChat Official Account</a>
+    🏠 <a href="https://www.aixcoder.com/" target="_blank">Official website</a>｜📄 <a href="https://arxiv.org/pdf/2410.13187" target="_blank">Paper</a> | 🛠 <a href="https://marketplace.visualstudio.com/items?itemName=aixcoder-plugin.aixcoder" target="_blank">VS Code Plugin</a>｜🛠 <a href="https://plugins.jetbrains.com/plugin/13574-aixcoder-code-completer" target="_blank">Jetbrains Plugin</a>｜🤗 <a href="https://huggingface.co/aiXcoder/aixcoder-7b-base" target="_blank">Model Weights</a>｜<a href="./assets/wechat_1.jpg" target="_blank">WeChat</a>｜<a href="./assets/wechat_2.jpg" target="_blank">WeChat Official Account</a>
 </p>
 
 Welcome to the official repository of aiXcoder-7B Code Large Language Model. This model is designed to understand and generate code across multiple programming languages, offering state-of-the-art performance in code completion, comprehension, generation, and more tasks about programming languages.
 
 Table of Contents
 
-1. [Model Introduction](#model-introduction)
-2. [Quickstart](#quickstart)
+- [aiXcoder-7B Code Large Language Model](#aixcoder-7b-code-large-language-model)
+  - [Model Introduction](#model-introduction)
+  - [Quickstart](#quickstart)
     - [Environment Requirements](#environment-requirements)
+      - [Option 1: Build Env](#option-1-build-env)
+      - [Option 2: Docker](#option-2-docker)
     - [Model Weights](#model-weights)
     - [Inference Example](#inference-example)
+      - [Command Line Execution](#command-line-execution)
+      - [Python Script Execution](#python-script-execution)
     - [Quantized through bitsandbytes](#quantized-through-bitsandbytes)
     - [Fine-tuning example](#fine-tuning-example)
-3. [Data for aiXcoder 7B](#data-for-aixcoder-7b)
-4. [Training](#training)
+  - [Data for aiXcoder 7B](#data-for-aixcoder-7b)
+  - [Training](#training)
     - [Training Hyperparameters](#training-hyperparameters)
     - [Batch processing method](#batch-processing-method)
     - [Pre-training Tasks](#pre-training-tasks)
-5. [Details of Experimental Results](#details-of-experimental-results)
+  - [Details of Experimental Results](#details-of-experimental-results)
     - [NL2Code Benchmarks](#nl2code-benchmarks)
     - [Code Completion (Fill in the Middle)](#code-completion-fill-in-the-middle)
     - [Cross-file Code Evaluation](#cross-file-code-evaluation)
-6. [License](#license)
-7. [Acknowledgments](#acknowledgments)
+  - [License](#license)
+  - [Acknowledgments](#acknowledgments)
+  - [Citation](#citation)
 
 
 
@@ -493,3 +499,34 @@ The model weights are licensed under the [Model License](./MODEL_LICENSE) for ac
 We would like to thank all contributors to the open-source projects and datasets that made this work possible.
 
 Thank you for your interest in our Code Large Language Model. We look forward to your contributions and feedback!
+
+## Citation
+
+If you use the code or aiXcoder-7B in your work, please cite the following paper:
+```
+@article{aiXcoder-7B,
+  author       = {Siyuan Jiang and
+                  Jia Li and
+                  He Zong and
+                  Huanyu Liu and
+                  Hao Zhu and
+                  Shukai Hu and
+                  Erlu Li and
+                  Jiazheng Ding and
+                  Yu Han and
+                  Wei Ning and
+                  Gen Wang and
+                  Yihong Dong and
+                  Kechi Zhang and
+                  Ge Li},
+  title        = {aiXcoder-7B: {A} Lightweight and Effective Large Language Model for
+                  Code Processing},
+  journal      = {CoRR},
+  volume       = {abs/2410.13187},
+  year         = {2024},
+  url          = {https://doi.org/10.48550/arXiv.2410.13187},
+  doi          = {10.48550/ARXIV.2410.13187},
+  eprinttype    = {arXiv},
+  eprint       = {2410.13187}
+}
+```
